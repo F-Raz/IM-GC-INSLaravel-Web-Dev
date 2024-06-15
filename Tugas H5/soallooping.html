@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+
+<body>
+    <h1>Berlatih Looping</h1>
+    <h3>Contoh Hasil Looping</h3>
+    <div id="example">
+    </div>
+    <h3>Soal No. 1</h3>
+    <div id="jawaban1">
+    </div>
+    <script>
+        var jawabanContoh = "";
+        for (var i = 0; i < 5; i++) {
+            jawabanContoh += "Ini adalah angka ke = " + [i] + "<br>"
+        }
+        document.getElementById("example").innerHTML = jawabanContoh
+
+        var i = 0;
+        var jawab1 = "";
+        while (i < 21) {
+            i++;
+            if (i % 2 != 0) {
+                jawab1 += " "
+            } else {
+                jawab1 += i + " - I love coding <br>";
+            }
+        }
+        while(i > 1){
+            i--
+        if (i % 2 != 0) {
+            jawab1 += " "
+        } else {
+            jawab1 += i + " - I will become web developer <br>";
+        }
+        }
+        document.getElementById("jawaban1").innerHTML = jawab1
+    </script>
+</body>
+</html>
