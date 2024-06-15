@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array</title>
+    <style>
+        .data-container {
+            margin-bottom: 20px;
+        }
+
+        .data-container p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,26 +25,30 @@
             ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
             ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
             ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
-            ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]]
-        var jawaban1 = " "
+            ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+        ];
 
-        for (var i = 0; i < 4; i++) {
-            for (var b = 0; b < 5; b++) {
+        var jawaban1 = "";
+
+        for (var i = 0; i < input.length; i++) {
+            jawaban1 += '<div class="data-container">';
+            for (var b = 0; b < input[i].length; b++) {
                 if (b == 0) {
-                    jawaban1 += "Nomor : " + input[i][b] + "<br>"
+                    jawaban1 += "<p>Nomor: " + input[i][b] + "</p>";
                 } else if (b == 1) {
-                    jawaban1 += "Nama : " + input[i][b] + "<br>"
+                    jawaban1 += "<p>Nama: " + input[i][b] + "</p>";
                 } else if (b == 2) {
-                    jawaban1 += "Ttl : " + input[i][b] + " "
+                    jawaban1 += "<p>Ttl: " + input[i][b] + " ";
                 } else if (b == 3) {
-                    jawaban1 += input[i][b] + "<br>"
+                    jawaban1 += input[i][b] + "</p>";
                 } else if (b == 4) {
-                    jawaban1 += "Hoby : " + input[i][b] + " <br>"
+                    jawaban1 += "<p>Hobi: " + input[i][b] + "</p>";
                 }
             }
+            jawaban1 += '</div>';
         }
 
-        document.getElementById("jawaban1").innerHTML = jawaban1
+        document.getElementById("jawaban1").innerHTML = jawaban1;
     </script>
 </body>
 
