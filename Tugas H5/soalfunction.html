@@ -35,11 +35,11 @@
         /* Buatlah sebuah fungsi bernama teriak(), yang mengembalikan nilai berupa "Halo Function!", yang kemudian akan ditampilkan di halaman html.
            Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH. */
         function teriak() {
-            return "Halo Function!";
+            document.getElementById("jawaban1").innerHTML = "Halo Function!";
         }
-
-        // Tampilkan hasilnya di dalam elemen dengan id "jawaban1"
-        document.getElementById("jawaban1").innerHTML = teriak();
+        teriak()
+  
+       
 
         // Soal No. 2 Fungsi Kalikan
         /* Buatlah sebuah fungsi bernama kalikan(), yang mengembalikan nilai berupa hasil kali dari dua parameter yang dikirim. 
